@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Preparación</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="./Preparacion_Picking.css">
+</head>
+
+<body>
+  <nav>
+    <p class="bread-crumb">Menú Principal > Preparación > Preparación de Picking</p>
+
+    <div class="nav-border">
+      <a id="go_back" class="go-back" href="../../Preparacion_Menu/Preparacion_Menu.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M5 12l6 6M5 12l6-6"/>
+        </svg>
+        Volver
+      </a>
+
+      <div class="nav-text">
+        <h1>Preparación de Picking</h1>
+        <p>Selecciona los parámetros de la preparación</p>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="ubicaciones-section">
+      <h1>Selecciona una ubicación</h1>
+      <menu class="menu-grid">
+        <ul>
+          <li><button class="ubicacion-btn" id="ubicacion-enabled">PA</button></li>
+          <li><button class="ubicacion-btn">PC</button></li>
+          <li><button class="ubicacion-btn">EA</button></li>
+          <li><button class="ubicacion-btn">BA</button></li>
+          <li><button class="ubicacion-btn">BB</button></li>
+          <li><button class="ubicacion-btn">BC</button></li>
+          <li><button class="ubicacion-btn">PA</button></li>
+
+        </ul>
+      </menu>
+    </section>
+
+    <section id="sucursales-section">
+      <h1>Sucursales Disponibles</h1>
+
+  <div class="search-header">
+      <div class="search-container">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+          <path d="M10 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"/><path d="M21 21l-6-6"/>
+        </svg>
+        <input type="search" id="sucursal-search" placeholder="Buscar sucursal...">
+      </div>
+
+      <button id="search-by">Ordenar por
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" 
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h7M4 12h7M4 18h9M15 9l3-3l3 3M18 6v12"/>
+        </svg>
+      </button>
+
+    </div>
+
+      <div class="sucursales-container scroll-bar">
+       <div class="sucursal-card hide"> <div class="sucursal-data"> <h2>#900</h2> <p>Cant Productos: <strong>1404</strong></p> <p>Num Preparacion: <strong>55656</strong></p><p>Hora Salida: <strong>15:00 </strong></p> <span class="porcentaje"style="color: green;" >%100</span></div> </div>
+       <div class="sucursal-card hide"> <div class="sucursal-data"> <h2>#704</h2> <p>Cant Productos: <strong>300</strong></p> <p>Num Preparacion: <strong>55656</strong></p><p>Hora Salida: <strong>13:00</strong> </p> <span class="porcentaje" >%90</span></div> </div>
+       <div class="sucursal-card hide"> <div class="sucursal-data"> <h2>#57</h2> <p>Cant Productos: <strong>123</strong></p> <p>Num Preparacion: <strong>56775</strong></p><p>Hora Salida: 0 </p> <span class="porcentaje" style="color: brown;">%0</span></div> </div>
+       <div class="sucursal-card hide"> <div class="sucursal-data"> <h2>#36</h2> <p>Cant Productos: <strong>36</strong></p> <p>Num Preparacion: <strong>56775</strong></p><p>Hora Salida: 0</p> <span class="porcentaje" style="color: brown;">%0</span></div> </div>
+       <div class="sucursal-card hide"> <div class="sucursal-data"> <h2>#146</h2> <p>Cant Productos: <strong>77</strong></p> <p>Num Preparacion: <strong>55656</strong></p><p>Hora Salida: 0</p> <span class="porcentaje" style="color: brown;">%0</span></div> </div> 
+       <div class="sucursal-card hide"> <div class="sucursal-data"> <h2>#209</h2> <p>Cant Productos: <strong>156</strong></p> <p>Num Preparacion: <strong>55656</strong></p><p>Hora Salida: 0</p> <span class="porcentaje" style="color: brown;">%0</span></div> </div>
+       <div class="sucursal-card hide"> <div class="sucursal-data"> <h2>#214</h2> <p>Cant Productos: <strong>89</strong></p> <p>Num Preparacion: <strong>55656</strong></p><p>Hora Salida: 0</p> <span class="porcentaje" style="color: brown;">%0</span></div> </div>
+
+      </div>
+
+      <div class="alerta-sucursales"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-alert-triangle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 9v2m0 4v.01"/><path d="M10.29 3.86l-7.29 12.56a2 2 0 0 0 1.71 3.06h14.58a2 2 0 0 0 1.71 -3.06l-7.29 -12.56a2 2 0 0 0 -3.42 0z"/></svg>
+        <span>No hay sucursales disponibles para la ubicación seleccionada.</span>
+      </div>
+
+
+
+
+      </section>
+  </main>
+
+  <footer>
+    <p>Sistema Optimizado para HandHelds.</p>
+    <p>yagominardi2005@gmail.com</p>
+  </footer>
+
+  <script src="./Preparacion_Picking.js"></script>
+</body>
+</html>

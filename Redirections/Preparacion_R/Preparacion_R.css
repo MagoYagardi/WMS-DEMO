@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --color-gray-900: #111827;
+  --button-color-farma: #014694;
+  --Title-color-farma: #012a59;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  color: var(--color-gray-900);
+  background: white;
+  font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: var(--Title-color-farma);
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+}
+
+
+article {
+  max-width: 900px;       /* mismo ancho que el grid */
+  margin: 0 auto;          /* centrado horizontal */
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+svg {
+  width: 30%;
+  height: auto;
+  margin-bottom: 20px;
+
+
+}
+
+
+
+
+
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--color-gray-900);
+    padding-bottom: 40px;
+    
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+  color: var(--color-gray-900);
+  text-decoration: none;
+  margin-bottom: 10px;
+  border-radius: 4px;
+   justify-content: center;
+
+}
+
+a:hover {
+  background-color: #e0e0e0;
+  border-color: #555;
+}
+
+.strong-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 12px;
+  border-radius: 4px;
+  background-color: var(--button-color-farma);
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.2s;
+  color: white;
+  text-decoration: none;
+  border: none;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.strong-button svg {
+  width: 30px;
+  height: 24px;
+}
+
+.strong-button:hover {
+  background-color: #e0e0e0;
+  border-color: #555;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .menu-grid ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .menu-grid ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-border {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .alert-icon {
+    width: 60%;
+  }
+}
+
+@media (max-width: 425px) {
+  .menu-grid ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+

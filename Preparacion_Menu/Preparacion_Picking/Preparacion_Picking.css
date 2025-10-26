@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --color-gray-900: #111827;
+  --button-color-farma: #014694;
+  --Title-color-farma: #061f3d;
+  --bg-light: #f9f9f9;
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background: white;
+  color: var(--color-gray-900);
+  scrollbar-width: none;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: left;
+}
+
+h1 {
+  color: var(--Title-color-farma);
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+}
+
+/* NAV */
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bread-crumb {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.nav-border {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 30px 20px;
+  background: var(--bg-light);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.go-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--button-color-farma);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.go-back:hover {
+  background: #013b7b;
+}
+
+/* UBICACIONES */
+.ubicaciones-section {
+  margin-bottom: 50px; 
+  border-bottom: #ccc 1px solid;
+  padding-bottom: 20px;
+}
+
+.menu-grid {
+  max-width: 600px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+
+.menu-grid ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+}
+
+
+
+.ubicacion-btn {
+  width: 100%;
+  padding: 15px;
+  background: var(--button-color-farma);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ubicacion-btn:hover,
+.ubicacion-btn.selected {
+  transform: scale(1.05);
+  margin-top: -2px;
+  border: 1px solid var(--button-color-farma);
+  background-color: #f3f8ff;
+  color: var(--color-gray-900);
+}
+
+
+
+
+#sucursales-section h1 {
+  color: var(--Title-color-farma);
+}
+
+/* BUSCADOR */  
+
+
+.search-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0;
+  margin-bottom: 10px;
+}
+
+
+
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  max-width: 400px;
+  margin: 10px 25px ;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: gray;
+  width: 20px;
+}
+
+#sucursal-search {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* BOTÓN ORDENAR */
+#search-by {
+  background: var(--button-color-farma);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-right: 10px;
+}
+
+#search-by:hover {
+  background: #013b7b;
+}
+
+/* SCROLLABLE LISTA */
+.sucursales-container {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+.scroll-bar {
+  max-height: 65vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--button-color-farma) #eaeaea;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background: var(--button-color-farma);
+  border-radius: 8px;
+}
+
+/* CARDS */
+.sucursal-card {
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: var(--bg-light);
+  transition: all 0.2s;
+  cursor: pointer;
+  
+}
+
+.sucursal-card .porcentaje {
+  float: right;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--button-color-farma);
+  margin-top: -40px;
+}
+
+.sucursal-card:hover,
+.sucursal-card.selected {
+  border-color: var(--button-color-farma);
+  background: #f3f8ff;
+  transform: scale(1.02);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: gray;
+}
