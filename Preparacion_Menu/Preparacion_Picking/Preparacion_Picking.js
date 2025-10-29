@@ -1,3 +1,35 @@
+// cargar ubicaciones desde Data.js
+
+//cargar scursales desde Data.js segund ubicacion seleccionada(interfaz)
+
+// 2. Cargás los estados de scursles guardados en localStorage, segubn ubicaciones seleccionada 
+const estadoSucursales = JSON.parse(localStorage.getItem("estadoSucursales")) || {};
+
+// 3. Combinás la información
+const sucursalesConProgreso = sucursalesUbicacion.map(s => {
+  const progreso = estadoSucursales[s.id]?.progreso || 0;
+  return { ...s, progreso };
+});
+
+// 4. Renderizás las cards con los valores combinados
+sucursalesConProgreso.forEach(sucursal => {
+  renderSucursalCard(sucursal);
+});
+
+
+//selecciionar sucursal(interfaz)
+
+//Al apretar ENTER
+//agregar sucursal seleccionada(interfaz) al local storage 
+//redirigir a Cola_Picking al presionar ENTER
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const ubicaciones = document.querySelectorAll(".ubicacion-btn");
   const sucursales = document.querySelectorAll(".sucursal-card");
@@ -9,12 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
       ubicaciones.forEach(b => b.classList.remove("selected"));
       btn.classList.add("selected");
       sucursalSection.scrollIntoView({ behavior: "smooth", block: "start" });
-        
+
         if (btn.id === "ubicacion-enabled") {
             sucursales.forEach(card => card.classList.remove("hide"));
-            
+
         }   else {
-            sucursalCards.classList.add("hide");
+            sucursales.classList.add("hide");
         };
     });
   });
