@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loginButton.addEventListener("click", () => {
         console.log("Botón login clickeado");
-        window.location.href = "WMS-DEMO/Home_Menu/Home_Menu.html";
+        window.location.href = "/WMS-DEMO/Home_Menu/Home_Menu.html";
 
     });
 });
