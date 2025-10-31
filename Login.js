@@ -6,3 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "../Home_Menu/Home_Menu.html";
     });
 });
+
+
+// Simular login al presionar "Enter" con pantalla de carga
